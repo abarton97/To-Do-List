@@ -52,9 +52,10 @@ body {
 }
 
 .sidebar {
+    position: fixed;
+    z-index: 1;
     height: 100%;
     width: 20%;
-    position: absolute;
     background-color: #C8EFF9;
     transition: 0.5s;
     border-right: 1px solid;
@@ -105,10 +106,13 @@ body {
 }
 
 .todoContainer {
-    align-items: center;
-    width: 78%;
-    height: 500px;
+    position: absolute;
+    width: 75.5%;
+    height: 83%;
     margin-top: 1%;
+    margin-left: 21%;
     border-radius: 10px;
     border-style: solid;
+    transition: margin-left .5s;
+    padding: 16px;
 }
